@@ -1,7 +1,4 @@
-import com.maryapc.algorithms.sortings.BubbleSort;
-import com.maryapc.algorithms.sortings.InsertionSort;
-import com.maryapc.algorithms.sortings.MergeSort;
-import com.maryapc.algorithms.sortings.SelectionSort;
+import com.maryapc.algorithms.sortings.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -46,6 +43,11 @@ public class SortTest {
     @Test
     public void testMergeSort() {
         printTestResult(MergeSort.class.getSimpleName(), MergeSort.sort(tempArray));
+    }
+
+    @Test
+    public void testQuickSort() {
+        printTestResult(QuickSort.class.getSimpleName(), QuickSort.sort(tempArray));
     }
 
     private void printTestResult(String sortName, int[] sortArray) {
